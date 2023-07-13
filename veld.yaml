@@ -1,0 +1,13 @@
+x-veld:
+  veld_chain:
+    #TODO
+
+services:
+  veld:
+    extends:
+      file: "./veld_executable_4__apis_ner_transform_to_conll2003/veld.yaml"
+      service: veld
+    volumes:
+      - ./spacy-ner/:/veld/input/
+      - ./veld_data_5_apis_ner_conll2003/:/veld/output/
+
