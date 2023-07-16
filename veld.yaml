@@ -1,6 +1,7 @@
 x-veld:
   chain:
-
+    scope:
+      - "ETL"
 
 services:
   veld:
@@ -9,5 +10,4 @@ services:
       service: veld
     volumes:
       - ./spacy-ner/:/veld/input/
-      - ./veld_data_5_apis_ner_conll2003/json/:/veld/output/
-
+      - ./veld_data_5_apis_ner_conll2003/:/veld/output/json/
