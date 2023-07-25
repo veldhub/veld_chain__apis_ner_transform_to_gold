@@ -1,13 +1,15 @@
 x-veld:
   chain:
-    scope:
-      - "ETL"
+    about:
+      description: "hard-coded conversion of apis ner models to custom json format."
+      scope: "ETL"
 
 services:
   veld:
     extends:
-      file: "./veld_executable_4__apis_ner_transform_to_conll2003/veld.yaml"
+      file: ./veld_executable_4_apis_ner_transform_to_gold/veld.yaml
       service: veld
     volumes:
       - ./spacy-ner/:/veld/input/
-      - ./veld_data_5_apis_ner_conll2003/:/veld/output/
+      - ./veld_data_5_apis_ner_gold/json/uncleaned/:/veld/output/
+
