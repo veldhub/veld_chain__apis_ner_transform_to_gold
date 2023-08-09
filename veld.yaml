@@ -2,7 +2,7 @@ x-veld:
   chain:
     about:
       description: "hard-coded conversion of apis ner models to custom json format."
-      scope: "ETL"
+      topic: "ETL"
 
 services:
   veld:
