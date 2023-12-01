@@ -11,5 +11,5 @@ services:
       service: veld
     volumes:
       - ./spacy-ner/:/veld/input/
-      - ./veld_data_5_apis_ner_gold/data/:/veld/output/
+      - ./veld_data_5_apis_oebl__ner_gold/data/:/veld/output/
 
