@@ -1,9 +1,9 @@
 [submodule "spacy-ner"]
 	path = spacy-ner
 	url = https://gitlab.oeaw.ac.at/acdh-ch/apis/spacy-ner.git
-[submodule "veld_executable_4_apis_ner_transform_to_gold"]
-	path = veld_executable_4_apis_ner_transform_to_gold
-	url = https://github.com/acdh-oeaw/veld_executable_4_apis_ner_transform_to_gold.git
+[submodule "veld_code_4_apis_ner_transform_to_gold"]
+	path = veld_code_4_apis_ner_transform_to_gold
+	url = https://github.com/acdh-oeaw/veld_code_4_apis_ner_transform_to_gold.git
 [submodule "veld_data_5_apis_oebl__ner_gold"]
 	path = veld_data_5_apis_oebl__ner_gold
 	url = https://github.com/acdh-oeaw/veld_data_5_apis_oebl__ner_gold.git
