@@ -7,7 +7,7 @@ x-veld:
 services:
   veld:
     extends:
-      file: ./veld_executable_4_apis_ner_transform_to_gold/veld.yaml
+      file: ./veld_code_4_apis_ner_transform_to_gold/veld.yaml
       service: veld
     volumes:
       - ./spacy-ner/:/veld/input/
