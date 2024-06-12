@@ -13,11 +13,11 @@ services:
       service: veld
     volumes:
       - ./spacy-ner/:/veld/input/
-      - ./veld_data_5_apis_oebl__ner_gold/:/veld/output/1/
+      - ./veld_data_5_apis_oebl__ner_gold/data/:/veld/output/1/
       - ./:/veld/output/2/
     environment:
-      out_json_uncleaned_path: "/veld/output/1/data/apis_oebl__ner__1_uncleaned.json"
-      out_json_cleaned_path: "/veld/output/1/data/apis_oebl__ner__2_cleaned.json"                   
-      out_json_cleaned_simplified_path: "/veld/output/1/data/apis_oebl__ner__3_cleaned_simplified.json"  
-      out_log_path: "/veld/output/2/extract_and_clean.log"       
+      out_json_uncleaned_file: "apis_oebl__ner__1_uncleaned.json"
+      out_json_cleaned_file: "apis_oebl__ner__2_cleaned.json"                   
+      out_json_cleaned_simplified_file: "apis_oebl__ner__3_cleaned_simplified.json"  
+      out_log_file: "extract_and_clean.log"       
 
