@@ -1,3 +1,0 @@
-[submodule "spacy-ner"]
-	path = spacy-ner
-	url = https://gitlab.oeaw.ac.at/acdh-ch/apis/spacy-ner.git
