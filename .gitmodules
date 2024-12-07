@@ -1,5 +1,5 @@
 [submodule "data/veld_data__apis-spacy-ner-legacy"]
-	path = data/veld_data__apis-spacy-ner-legacy
+	path = data/veld_data__apis_spacy_ner_legacy
 	url = https://gitlab.oeaw.ac.at/acdh-ch/apis/spacy-ner.git
 [submodule "data/veld_data__apis_oebl__ner_gold"]
 	path = data/veld_data__apis_oebl__ner_gold
