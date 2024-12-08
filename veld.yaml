@@ -8,15 +8,17 @@ x-veld:
 services:
   veld:
     extends:
-      file: ./veld_code_4_apis_ner_transform_to_gold/veld.yaml
+      file: ./code/veld_code__apis_ner_transform_to_gold/veld.yaml
       service: veld
     volumes:
-      - ./spacy-ner/:/veld/input/
-      - ./veld_data_5_apis_oebl__ner_gold/data/:/veld/output/1/
-      - ./:/veld/output/2/
+      - ./data/veld_data__apis_spacy_ner_legacy/:/veld/input/
+      - ./data/veld_data__apis_oebl__ner_gold/data_uncleaned:/veld/output/uncleaned/
+      - ./data/veld_data__apis_oebl__ner_gold/data_cleaned:/veld/output/cleaned/
+      - ./data/veld_data__apis_oebl__ner_gold/data_cleaned_simplified:/veld/output/cleaned_simplified/
+      - ./:/veld/output/log/
     environment:
-      out_json_uncleaned_file: "apis_oebl__ner__1_uncleaned.json"
-      out_json_cleaned_file: "apis_oebl__ner__2_cleaned.json"                   
-      out_json_cleaned_simplified_file: "apis_oebl__ner__3_cleaned_simplified.json"  
-      out_log_file: "extract_and_clean.log"       
+      out_json_uncleaned_file: "uncleaned.json"
+      out_json_cleaned_file: "cleaned.json"
+      out_json_cleaned_simplified_file: "cleaned_simplified.json"
+      out_log_file: "extract_and_clean.log"
 
