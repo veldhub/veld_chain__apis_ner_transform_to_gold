@@ -7,3 +7,6 @@
 [submodule "code/veld_code__apis_ner_transform_to_gold"]
 	path = code/veld_code__apis_ner_transform_to_gold
 	url = https://github.com/veldhub/veld_code__apis_ner_transform_to_gold.git
+[submodule "data/APIS_OEBL__Named_Entity_Recognition"]
+	path = data/APIS_OEBL__Named_Entity_Recognition
+	url = https://huggingface.co/datasets/SteffRhes/APIS_OEBL__Named_Entity_Recognition
