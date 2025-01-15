@@ -1,6 +1,30 @@
 # veld_chain__apis_ner_transform_to_gold
 
-This repo extracts and converts all gold data from https://gitlab.oeaw.ac.at/acdh-ch/apis/spacy-ner
+This repo contains [chain velds](https://zenodo.org/records/13322913) encapsulating extraction and 
+conversion of all gold data from https://gitlab.oeaw.ac.at/acdh-ch/apis/spacy-ner
+
+## requirements
+
+- git
+- docker compose (note: older docker compose versions require running `docker-compose` instead of 
+  `docker compose`)
+
+Clone this repo with all its submodules
+```
+git clone --recurse-submodules https://github.com/veldhub/veld_chain__apis_ner_transform_to_gold.git
+```
+
+## how to reproduce
+
+The following chain velds were used. Open the respective veld yaml file for more information.
+
+**[./veld.yaml](./veld.yaml)** 
+
+Reruns the transformation.
+
+```
+docker compose -f veld.yaml up
+```
 
 ### notes on duplicated legacy code:
 
@@ -32,3 +56,4 @@ This means that converting this json data would not create new unique data and g
 outlined above, it is simply not worth the effort.
 
 The function implementing a simple comparison is `evaluate_json_data` in `./src/convert.py`. 
+
