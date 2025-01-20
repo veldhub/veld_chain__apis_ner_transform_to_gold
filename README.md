@@ -1,4 +1,4 @@
-# veld_chain__apis_ner_transform_to_gold
+# ![veld chain](https://raw.githubusercontent.com/veldhub/.github/refs/heads/main/images/symbol_V_letter.png) veld_chain__apis_ner_transform_to_gold
 
 This repo contains [chain velds](https://zenodo.org/records/13322913) encapsulating extraction and 
 conversion of all gold data from https://gitlab.oeaw.ac.at/acdh-ch/apis/spacy-ner
